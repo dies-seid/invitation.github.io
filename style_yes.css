@@ -56,3 +56,9 @@ body {
 h1 {
     color: aliceblue;
 }
+
+@media screen and (max-width: 600px) {
+    .center {
+        font-size: 12px;
+    }
+}
