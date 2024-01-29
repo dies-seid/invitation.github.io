@@ -1,0 +1,58 @@
+/* style_yes.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* To prevent overflow of animated elements */
+}
+
+.night {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #00003b); /* Adjust the colors as needed */
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% 100%;
+    }
+}
+
+.confirmation-container {
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column {
+    text-align: center;
+}
+
+.left, .right {
+    flex-basis: 20%;
+}
+
+.center {
+    flex-basis: 40%;
+}
+
+.column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    color: aliceblue;
+}
